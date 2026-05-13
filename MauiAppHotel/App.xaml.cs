@@ -1,22 +1,22 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿namespace MauiAppHotel;
 
-namespace MauiAppHotel
+public partial class App : Application
 {
-    public partial class App : Application
+    public App()
     {
-        public App()
+        InitializeComponent();
+        // NÃO COLOQUE "MainPage = ..." AQUI!
+    }
+
+    protected override Window CreateWindow(IActivationState? activationState)
+    {
+        // Aqui definimos a página inicial corretamente
+        var navegacao = new NavigationPage(new Views.ContratacaoHospedagem());
+
+        return new Window(navegacao)
         {
-            InitializeComponent();
-        }
-
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            var window = new Window(new AppShell());
-
-            window.Width = 400;
-            window.Height = 600;
-
-            return window;
-        }
+            Width = 400,
+            Height = 600
+        };
     }
 }

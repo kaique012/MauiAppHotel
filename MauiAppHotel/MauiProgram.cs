@@ -11,8 +11,12 @@ namespace MauiAppHotel
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Oswald-Bold.ttf", "Oswald-Bold");
+                    fonts.AddFont("Oswald-ExtraLight.ttf", "Oswald-ExtraLight");
+                    fonts.AddFont("Oswald-Light.ttf", "Oswald-Light");
+                    fonts.AddFont("Oswald-Medium.ttf", "Oswald-Medium");
+                    fonts.AddFont("Oswald-Regular.ttf", "Oswald-Regular");
+                    fonts.AddFont("Oswald-SemiBold.ttf", "Oswald-SemiBold"); 
                 });
 
 #if DEBUG

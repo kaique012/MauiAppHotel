@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreView"
+             Title="Sobre"
+             BackgroundColor="#2B0B5A"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+
+        <Image Source="dotnet_bot.png" 
+               HeightRequest="150" 
+               HorizontalOptions="Center" />
+
+        <Label Text="Sobre o App de Hotel" 
+               FontSize="24" FontAttributes="Bold" 
+               TextColor="White" HorizontalOptions="Center" />
+        <Label Text="Desenvolvido para uso de hotéis" 
+                FontSize="24" FontAttributes="Bold" 
+                TextColor="White" HorizontalOptions="Center" />
+
+
+        <Frame BackgroundColor="#3D1A78" BorderColor="Transparent" CornerRadius="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Desenvolvido por: Kaique" 
+                       TextColor="White" HorizontalOptions="Center" />
+                <Label Text="Ano: 2026" 
+                       TextColor="LightGray" HorizontalOptions="Center" />
+                <Label Text="Versão 1.0" 
+                       TextColor="LightGray" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar" 
+                Clicked="Button_Clicked"
+                BackgroundColor="#9173CA" 
+                TextColor="White" 
+                WidthRequest="150" 
+                HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

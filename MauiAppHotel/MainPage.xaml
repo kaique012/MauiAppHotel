@@ -15,7 +15,7 @@
 
             <Label
                 Text="Hello, World!"
-                FontFamily ="Oswald-Bold"
+                FontFamily ="Oswald-Regular"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
